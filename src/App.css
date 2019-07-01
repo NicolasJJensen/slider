@@ -1,0 +1,39 @@
+.switch{
+    margin: 20px;
+    position: relative;
+    background-color: lightgray;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    left: 5px;
+    top: 5px;
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider {
+    position: relative;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: -5px;
+    top: -5px;
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.checkbox {
+    display: none;
+}
+
+input.checkbox:checked + .slider {
+    background-color: lightblue;
+    left: 45px;
+}
+
+input.checkbox:checked, .switch {
+    background-color: blue;
+}
